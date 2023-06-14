@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #111827;
+  color: white;
+}
+
+/* Here Header Section Start */
+.ham {
+  margin: 70px 0px;
+}
+.utility {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 40px;
+  cursor: pointer;
+  list-style: none;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 25px 100px;
+}
+.home {
+  padding: 5px 10px;
+  background: rgb(100, 100, 224);
+  border-radius: 15px;
+}
+.hamBurger img {
+  width: 50px;
+  cursor: pointer;
+}
+/* Here Hero Section Start */
+/* Here Hero Section Start */
+.heroSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.intro img {
+  width: 40px;
+}
+.intro {
+  font-size: 40px;
+  font-weight: 600;
+  margin-left: 195px;
+}
+.name {
+  font-size: 65px;
+  font-weight: 700;
+}
+.Developer {
+  font-size: 35px;
+  color: rgb(197, 197, 89);
+}
+.heroImg img {
+  width: 400px;
+  height: 400px;
+}
+
+/* Project Section Start */
+.projectHeading {
+  font-size: 45px;
+  font-weight: 800;
+  text-align: center;
+  margin: 50px 0px;
+}
+.projectHeading hr {
+  height: 10px;
+  width: 135px;
+  background-color: blue;
+  border-radius: 20px;
+  margin: auto;
+  border: none;
+}
+
+/* Pic of the Project */
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.project img {
+  width: 250px;
+}
+
+.Row {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Social ICons Start */
+.socialIcons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  margin-top: -25px;
+  margin-bottom: 30px;
+}
+
+.socialIcons img {
+  width: 30px;
+}
+
+/* Here Responsiveness of the Website Start */
+/* Here Responsiveness of the Website Start */
+/* Here Responsiveness of the Website Start */
+/* Here Responsiveness of the Website Start */
+
+/* FOR LAPTOP AND TABLET SIZE */
+/* FOR LAPTOP AND TABLET SIZE */
+@media (min-width: 768px) {
+  .hamBurger {
+    display: none;
+  }
+}
+
+/* FOR MOBILE SIZE */
+/* FOR MOBILE SIZE */
+@media (max-width: 767px) {
+  nav {
+    display: none;
+  }
+  .hamBurger {
+    margin: 10px 15px;
+  }
+  .hamBurger img {
+    width: 35px;
+    cursor: pointer;
+}
+  .heroSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  .intro img {
+    width: 50px;
+    margin-left: -67px;
+    margin-bottom: 10px;
+}
+  .intro {
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    margin-top: 40px;
+    line-height: 55px;
+  }
+  .name {
+    font-size: 47px;
+    font-weight: 700;
+  }
+
+  .heroImg img {
+    width: 350px;
+    height: 350px;
+}
+.Row {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+}
