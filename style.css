@@ -7,7 +7,14 @@
 }
 
 /* Here Header Section Start */
-.ham {
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  padding: 25px 10px 25px 0px;
+}
+.hamBurger {
   margin: 70px 0px;
 }
 .utility {
@@ -19,7 +26,6 @@
   list-style: none;
   font-size: 20px;
   font-weight: 400;
-  margin: 25px 100px;
 }
 .home {
   padding: 5px 10px;
@@ -123,8 +129,16 @@
 /* FOR MOBILE SIZE */
 /* FOR MOBILE SIZE */
 @media (max-width: 767px) {
+  header {
+    max-height: 70px;
+    overflow-y: hidden;
+  }
   nav {
-    display: none;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
   }
   .hamBurger {
     margin: 10px 15px;
@@ -132,7 +146,17 @@
   .hamBurger img {
     width: 35px;
     cursor: pointer;
-}
+  }
+  .utility {
+    display: block;
+    width: 100%;
+  }
+  .utility li {
+    margin-top: 20px;
+  }
+  .home {
+    width: 20%;
+  }
   .heroSection {
     display: flex;
     flex-direction: column;
@@ -144,7 +168,7 @@
     width: 50px;
     margin-left: -67px;
     margin-bottom: 10px;
-}
+  }
   .intro {
     font-size: 30px;
     font-weight: 600;
@@ -164,11 +188,11 @@
   .heroImg img {
     width: 350px;
     height: 350px;
-}
-.Row {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: center;
-}
+  }
+  .Row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
 }
